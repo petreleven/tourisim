@@ -19,15 +19,15 @@
 </head>
 
 <body>
-    <form class="d-flex justify-content-center  flex-column mb-3 " method="post" enctype="multipart/form-data">
+    <form  method="post" enctype="multipart/form-data">
         {%csrf_token%}
         
-        <label>password</label>
-        <input name="password">
+        <label class="form-label" >password</label>
+        <input class="form-control" name="password">
         
-        <label>username</label>
-        <input name="username">
-        <button>Login</button>
+        <label class="form-label" >username</label>
+        <input class="form-control" name="username">
+        <button class="btn btn-primary">Login</button>
 
     </form>
 </body>
