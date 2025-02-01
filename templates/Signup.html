@@ -3,22 +3,22 @@
 
 
 
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center"  style="margin-top: 10px; ;">
     <form class="p-5 bg-light " method = "post">
         {%csrf_token%}
         <div class="mb-3 mt-5">
-            <label class="form-label">first_name</label>
+            <label>first_name</label>
             <input class="form-control"  name="first_name">
             
 
         </div>
         <div class="mb-3">
-            <label class="form-label">last_name</label>
+            <label>last_name</label>
             <input class="form-control"  name="last_name">
         </div>
         <div class="mb-3">
 
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <label>Email address</label>
             <input type="email" class="form-control"name="email">
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
@@ -27,13 +27,11 @@
             <input class="form-control"  name="username">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <label>Password</label>
             <input type="password" class="form-control" name="password">
         </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
+        
+        
         <button class="btn btn-danger mr-5">Signup</button>or<a href = "{% url 'loginpage' %}"class="btn btn-primary ms-5">Login</a>
     </form>
     </div>
