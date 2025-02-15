@@ -3,10 +3,13 @@ from. models import MYUSERS
 from django.shortcuts import redirect
 from django.contrib.auth import authenticate
 from django.contrib.auth import login
+from django.contrib.auth import logout
 from django.contrib.auth.hashers import make_password
 
 # Create your views here.
-
+def signout(request):
+    logout(request)
+    return redirect ("loginpage")
 
 def home(request):
     return render(request, 'index.html')
