@@ -72,9 +72,10 @@
               </ul>
               {%if user.is_authenticated%}
               
-                    <p class="navbar-text text-primary ">Welcome {{user.username}}
-                      <a class="nav-link font-weight-bold " style="font-size: 16px; color: #410064;" href="{% url 'logout' %}">logout</a>
-                    </p>
+                    <div class="d-flex align-items-center">
+                      <p class="navbar-text text-primary mb-0">Welcome {{user.username}}</p>
+                      <a class="nav-link font-weight-bold ms-2" style="font-size: 16px; color: #410064;" href="{% url 'logout' %}">logout</a>
+                    </div>
                     {%else%}
                    <a href="{% url 'loginpage'%}"class="btn-primary p-2">Login</a>
                     {%endif%}
