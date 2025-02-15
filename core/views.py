@@ -23,7 +23,7 @@ def signup(request):
         new_user=MYUSERS(first_name=first_name,last_name=last_name,email=email,password=password,username=username)
         new_user.save()
         
-        return redirect ("Homepage")
+        return redirect ("loginpage")
     return render(request, 'Signup.html')
 def loginpage(request):
     if request.method=="POST":
